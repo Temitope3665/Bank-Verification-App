@@ -5,7 +5,7 @@ const router = require('./route')
 const cookieparser = require('cookie-parser')
 
 const app = express()
-const port = 2000
+const port = process.env.PORT || 2000
 
 app.use(cors())
 app.use(express.json())
